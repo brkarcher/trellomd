@@ -3,7 +3,7 @@ import configparser
 import operator
 
 config = configparser.ConfigParser()
-config.read_file(open('treltxt.cfg'))
+config.read_file(open('trellomd.cfg'))
 
 bytes = urllib.request.urlopen(config['config']['board_url'] + '?key=' + config['config']['dev_key'] + '&token=' + config['config']['token'] + '&cards=open&lists=open').read()
 trello_data = json.loads(bytes.decode('utf-8'))
