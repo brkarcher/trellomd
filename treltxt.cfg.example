@@ -1,0 +1,4 @@
+[config]
+board_url = https://api.trello.com/1/boards/abcd1234
+dev_key = 32chardevkeyhere
+token = 64chartokengivenbyuserhere
